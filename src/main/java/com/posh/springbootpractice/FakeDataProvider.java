@@ -1,4 +1,4 @@
-package com.posh.springbootpractice.com.posh.springbootpractice;
+package com.posh.springbootpractice;
 
 import com.posh.springbootpractice.model.Address;
 import com.posh.springbootpractice.model.Person;
@@ -7,9 +7,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FakeDataProvider {
+class FakeDataProvider {
 
-    public List<Person> getPersons(){
+    List<Person> getPersons() {
 
         List<Person> personList = new ArrayList<>();
 

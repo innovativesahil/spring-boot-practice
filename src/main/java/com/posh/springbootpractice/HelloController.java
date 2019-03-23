@@ -1,6 +1,5 @@
 package com.posh.springbootpractice;
 
-import com.posh.springbootpractice.com.posh.springbootpractice.FakeDataProvider;
 import com.posh.springbootpractice.model.Address;
 import com.posh.springbootpractice.model.Person;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,8 +24,7 @@ public class HelloController {
     @RequestMapping("/person")
     public Person person(){
         Address address = new Address("Ward No 10", "Srinagar","India", 190001);
-        Person person = new Person("Sahil Verma", 23, address, LocalDate.now().minusYears(24));
-        return  person;
+        return new Person("Sahil Verma", 23, address, LocalDate.now().minusYears(24));
     }
 
     @RequestMapping("/persons")
